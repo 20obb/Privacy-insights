@@ -1,0 +1,37 @@
+# Website Creation for Privacy Score Checker
+
+- [ ] 001: Clarify initial user requirements.
+- [X] 002: Clarify mini-app functionality and re-confirm template choice (Phase 1: React+Mock, Phase 2: React+FastAPI).
+- [X] 003: Select appropriate website template(s) (React for Frontend, FastAPI for Backend).
+- [X] 004: Generate React project with mock analysis (Phase 1).
+    - [X] 004a: Set up React project (`/frontend`) using `create_react_app`.
+    - [X] 004b: Implement basic structure (Input field, Analyze button, Results area).
+    - [X] 004c: Implement mock analysis logic (generate random JSON on button click).
+    - [ ] 004d: Style minimally according to user specs (Placeholder styling for now).
+    - [X] 004e: Prepare initial `App.js` and `package.json`.
+- [X] 005: Review and confirm frontend structure with user.
+    - [X] 005a: Send `App.js` and `package.json` to user.
+    - [X] 005b: Get user confirmation/feedback.
+- [X] 006: Implement Backend FastAPI API (Phase 2).
+    - [X] 006a: Set up FastAPI project (`/backend`).
+    - [X] 006b: Implement `/analyze` endpoint (Placeholder logic initially).
+    - [X] 006c: Add necessary libraries (`fastapi`, `uvicorn`, `pydantic`, `httpx`, `beautifulsoup4`, etc.).
+    - [X] 006d: Implement actual analysis logic (fetching, parsing, VirusTotal - requires API key).
+- [X] 007: Integrate Frontend with Backend API.
+    - [X] 007a: Update React frontend to call the real API.
+    - [X] 007b: Handle CORS.
+- [ ] 008: Implement full UI based on user specifications.
+    - [X] 008_fix: Move UI logic from page.tsx to App.tsx.
+    - [X] 008a: Implement Homepage content (from original text file, translated/adapted to English).
+    - [X] 008b: Refine UI styling (Minimalist, blue/gray palette, cards, Inter font).
+    - [X] 008c: Add tooltips for technical terms.
+- [X] 009: Validate website.
+    - [X] 009a: Test UI responsiveness.
+    - [X] 009b: Verify content accuracy and language (English).
+    - [X] 009c: Test mini-app functionality (mock and real API).
+- [X] 010: Report and send website to user.
+    - [ ] 010a: Build the static site.
+    - [ ] 010b: Prepare backend for deployment (e.g., `requirements.txt`).
+    - [ ] 010c: Ask user about permanent deployment (GitHub Pages/Netlify for frontend, Render/Heroku for backend).
+    - [ ] 010d: Deploy if requested and feasible.
+    - [ ] 010e: Send final website files/URLs to user.
