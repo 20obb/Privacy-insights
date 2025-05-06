@@ -24,11 +24,5 @@ This project aims to:
 - **Deployment**: (Frontend supports static deployment on GitHub Pages / Netlify; Backend requires a dynamic host such as Render or Railway)
 
 ## 📦 Installation
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
 and read "local_run_instructions.md" 
+
