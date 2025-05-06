@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# 🛡️ Privacy Score Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Privacy Score Checker** is a web tool that helps users evaluate the privacy practices of websites they visit. It analyzes various privacy-related signals such as trackers, cookies, third-party requests, and browser fingerprinting techniques, then presents a clear summary to inform users of potential privacy risks.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 **Tracker Detection** – Counts the number of tracking elements embedded in the webpage.
+- 🍪 **Cookies Analysis** – Shows how many cookies are set by the site.
+- 🌐 **Third-Party Requests** – Measures the percentage of requests sent to third-party domains.
+- 🧠 **Fingerprinting Detection** – Detects the presence of browser fingerprinting techniques.
+- 🧪 **VirusTotal Scan** – Performs a basic (mock) security check using VirusTotal API.
 
-## Expanding the ESLint configuration
+## 🎯 Purpose
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This project aims to:
+- Raise awareness about privacy issues on the web.
+- Empower users to make informed decisions when browsing websites.
+- Encourage website owners to adopt better privacy practices.
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend**: React (with TailwindCSS + shadcn/ui for styling and components)
+- **Backend**: FastAPI (Python)
+- **Deployment**: (Frontend supports static deployment on GitHub Pages / Netlify; Backend requires a dynamic host such as Render or Railway)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📦 Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Frontend
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```bash
+cd frontend
+npm install
+npm run dev
+and read "local_run_instructions.md" 
